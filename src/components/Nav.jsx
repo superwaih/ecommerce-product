@@ -14,7 +14,7 @@ function Nav({count, click, setCounter, finalCheckout, showModal, handleModal, s
       
         <nav className='flex justify-between items-center m-auto w-4/5 h-15'>
 
-             <div onClick={handleClick} className='menu-bar z-50 md:hidden'> 
+             <div onClick={handleClick} className='menu-bar z-50 lg:hidden'> 
                 <img  src={click ? MenuBarClose : MenuBar} alt="" />
             </div>
             
@@ -24,7 +24,7 @@ function Nav({count, click, setCounter, finalCheckout, showModal, handleModal, s
               </Link>
           </div>
 
-          <div className="navlinks flex basis-3/4 justify-evenly md:block hidden">
+          <div className="navlinks flex basis-3/4 justify-evenly lg:block hidden">
               <Link to='/' className='p-4'>Collections</Link>
               <Link to='/men' className='p-4' >Men</Link>
               <Link to='/women' className='p-4' >Women</Link>
@@ -43,7 +43,7 @@ function Nav({count, click, setCounter, finalCheckout, showModal, handleModal, s
                 </div>
 
                 <div className="user-icon p-2">
-                    <img className='min-h-10' src={userIcon} alt="" />
+                    <img className='' src={userIcon} alt="" />
                 </div>
             </div>
         </nav>

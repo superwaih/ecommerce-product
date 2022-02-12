@@ -12,7 +12,7 @@ import 'swiper/css/navigation';
 function ProductSlide() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
-  return <div className=' lg:px-20 items-center ml-5 w-full md:w-1/2 md:h-screen'>
+  return <div className=' lg:px-20 items-center ml-5 w-full lg:w-1/2 lg:h-screen'>
        <Swiper
       // install Swiper modules
       modules={window.innerWidth < 768 ? [Navigation, Thumbs, Pagination] : [Navigation, Thumbs] }
@@ -41,7 +41,7 @@ function ProductSlide() {
         onSwiper={setThumbsSwiper}
         slidesPerView={4}
         spaceBetween={30}
-        className='hidden md:block'
+        className='hidden lg:block'
       >
         <SwiperSlide >
         <img className='rounded' src={productOne} alt="" />
