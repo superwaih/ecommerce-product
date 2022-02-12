@@ -1,9 +1,9 @@
-import {React, useState} from 'react';
+import {React} from 'react';
 import { Link } from 'react-router-dom';
 
 function SideNav({click}) {
   return <>
-    <div className={click ? "absolute navlinks z-50 flex bg-White flex-col font-bold p-10 h-screen" : 'hidden'}>
+    <div className={click ? "absolute navlinks z-50 flex bg-White flex-col font-bold p-20 h-screen" : 'hidden'}>
               <Link to='/' className='p-2'>Collections</Link>
               <Link to='/men' className='p-2' >Men</Link>
               <Link to='/women' className='p-2' >Women</Link>

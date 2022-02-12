@@ -26,7 +26,7 @@ const CartItem = ({ count, setCounter, shoeDetails, delCartItem }) => {
     // }
   }
 
-  return <div className='absolute z-50 left-4 right-8 md:right-20 h-56 bg-White md:left-[650px] lg:left-[750px] p-5 shadow max-w-full md-w-64 divide-y'>
+  return <div className='absolute z-50 left-4 right-8 md:right-20 bg-White md:left-[650px] lg:left-[750px] p-5 shadow max-w-full md-w-64 divide-y'>
     <h2 className=''>Cart</h2>
     {count > 0 ? shoeD?.map((e) => {
       return <>
@@ -44,8 +44,8 @@ const CartItem = ({ count, setCounter, shoeDetails, delCartItem }) => {
           </div>
         </div>
       </div>
-       <button onClick={finalCheck} className='mt-2 h-10 text-center cursor-pointer active:bg-Paleorange  shadow p-2 w-4/5 bg-Orange rounded text-White hover:bg-red cursor-pointer font-bold font-press-start'>Checkout</button>
        </>
+
     }) : <div className='flex justify-center items-center p-16
         '><p className='text-center max-w-full'>Your Cart is Empty</p></div>}
   </div>;
