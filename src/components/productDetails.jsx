@@ -5,7 +5,7 @@ function ProductDetails({count, setCounter, CounterDec, CounterInc}) {
 
   
   
-  return <div className='lg:w-1/2 max-w-full flex flex-col md:space-y-10 md:p-10 font-press-start'>
+  return <div className='lg:w-1/2 mb-20 max-w-full flex flex-col md:space-y-10 md:p-10 font-press-start'>
       <div className="details">
       <h1 className='text-Orange font-bold mb-3'>SNEAKERS COMPANY</h1>
       <h2 className='font-bold text-2xl md:text-6xl leading-12 mb-5 leading-12'>Fall Limited Edition Sneakers</h2>

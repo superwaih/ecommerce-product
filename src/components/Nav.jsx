@@ -10,11 +10,11 @@ import CartModal from './Cart';
  
 function Nav({count, click, setCounter, finalCheckout, showModal, handleModal, setShowModal, handleClick}) {
    
-  return <div className='relative h-20 divide-y z-1'>
+  return <div className='relative shadow h-20 z-1'>
       
-        <nav className='flex justify-between items-center m-auto w-4/5 h-15'>
+        <nav className='flex justify-between gap-4 items-center m-auto w-4/5 h-15'>
 
-             <div onClick={handleClick} className='menu-bar z-50 lg:hidden'> 
+             <div onClick={handleClick} className='menu p-2-bar z-50 lg:hidden'> 
                 <img  src={click ? MenuBarClose : MenuBar} alt="" />
             </div>
             
@@ -42,8 +42,8 @@ function Nav({count, click, setCounter, finalCheckout, showModal, handleModal, s
                         
                 </div>
 
-                <div className="user-icon p-2">
-                    <img className='' src={userIcon} alt="" />
+                <div className="user-icon">
+                    <img className='h-[60px] lg:[90px] md:h-[80px] p-2 w-[60px]' src={userIcon} alt="" />
                 </div>
             </div>
         </nav>
